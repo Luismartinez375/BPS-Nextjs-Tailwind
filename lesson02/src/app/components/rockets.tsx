@@ -1,42 +1,74 @@
 import React from "react";
 import Image from "next/image";
-import RocketLaunch from '../../../public/img/rocketlaunch.png';
-import RocketMan from '../../../public/img/rocketman.png';
-import RocketRide from '../../../public/img/rocketride.png';
- 
+import RocketLaunch from "../../../public/img/rocketlaunch.png";
+import RocketMan from "../../../public/img/rocketman.png";
+import RocketRide from "../../../public/img/rocketride.png";
 
 const Rockets = () => {
-    const content = (
-        <main className="max-w-4xl mx-auto p-4">
-            <section id="rockets" className="p-6 my-12 scroll-mt-20 widescreen:section-min-height tallscreen:section-min-height">
-                <h2 className="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
-                    Our Rockets
-                </h2>
-                <ul className="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
-                    <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                        <Image className="w-1/2 mb-6" src={RocketMan} alt="Rocket Man"></Image>
-                        <h3 className="text-3xl text-center text-slate-900 dark:text-white">Explorer </h3>
-                        <p className="hidden sm:block text-3xl text-center mt-2  text-slate-500 dark:text-slate-400">$</p>
-                        <p className="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Affordable Exploration</p>
-                    </li>
-                    <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                    <Image className="w-1/2 mb-6" src={RocketRide} alt="Rocket Ride"></Image>
-                        <h3 className="text-3xl text-center text-slate-900 dark:text-white">Adventurer </h3>
-                        <p className="hidden sm:block text-3xl text-center mt-2  text-slate-500 dark:text-slate-400">$$</p>
-                        <p className="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Best Selling Rocket!</p>
-                    </li>
-                    <li className="w-2/3 sm:w-5/6 flex flex-col items-center border border-solid border-slate-900 dark:border-gray-100 bg-white dark:bg-black py-6 px-2 rounded-3xl shadow-xl">
-                    <Image className="w-1/2 mb-6 " src={RocketLaunch} alt="Rocket Launch"></Image>
-                        <h3 className="text-3xl text-center text-slate-900 dark:text-white">Infinity</h3>
-                        <p className="hidden sm:block text-3xl text-center mt-2  text-slate-500 dark:text-slate-400">$$$</p>
-                        <p className="sm:hidden text-2xl text-center mt-2 text-slate-500 dark:text-slate-400">Luxury Starship </p>
-                    </li>
-                </ul>
-            </section>
-            <hr className="mx-auto bg-black dark:bg-white w-1/2"/>
-        </main>
-    )
-    return content
-}
+  const content = (
+    <main className="mx-auto max-w-4xl p-4">
+      <section
+        id="rockets"
+        className="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6"
+      >
+        <h2 className="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
+          Our Rockets
+        </h2>
+        <ul className="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
+          <li className="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+            <Image
+              className="mb-6 w-1/2"
+              src={RocketMan}
+              alt="Rocket Man"
+            ></Image>
+            <h3 className="text-center text-3xl text-slate-900 dark:text-white">
+              Explorer{" "}
+            </h3>
+            <p className="mt-2 hidden text-center text-3xl text-slate-500  dark:text-slate-400 sm:block">
+              $
+            </p>
+            <p className="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
+              Affordable Exploration
+            </p>
+          </li>
+          <li className="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+            <Image
+              className="mb-6 w-1/2"
+              src={RocketRide}
+              alt="Rocket Ride"
+            ></Image>
+            <h3 className="text-center text-3xl text-slate-900 dark:text-white">
+              Adventurer{" "}
+            </h3>
+            <p className="mt-2 hidden text-center text-3xl text-slate-500  dark:text-slate-400 sm:block">
+              $$
+            </p>
+            <p className="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
+              Best Selling Rocket!
+            </p>
+          </li>
+          <li className="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white px-2 py-6 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+            <Image
+              className="mb-6 w-1/2 "
+              src={RocketLaunch}
+              alt="Rocket Launch"
+            ></Image>
+            <h3 className="text-center text-3xl text-slate-900 dark:text-white">
+              Infinity
+            </h3>
+            <p className="mt-2 hidden text-center text-3xl text-slate-500  dark:text-slate-400 sm:block">
+              $$$
+            </p>
+            <p className="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
+              Luxury Starship{" "}
+            </p>
+          </li>
+        </ul>
+      </section>
+      <hr className="mx-auto w-1/2 bg-black dark:bg-white" />
+    </main>
+  );
+  return content;
+};
 
 export default Rockets;
